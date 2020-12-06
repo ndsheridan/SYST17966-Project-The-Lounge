@@ -14,6 +14,12 @@ package ca.sheridancollege.project;
 public abstract class Player {
 
     private String name; //the unique name for this player
+    public int score;
+    public int stay;
+    public int hit;
+    public int blackJack;
+    public int bust;
+    
 
     /**
      * A constructor that allows you to set the player's unique ID
@@ -39,7 +45,31 @@ public abstract class Player {
     public void setName(String name) {
         this.name = name;
     }
+    
+    public void setStay(int stay) {
+        this.stay = stay;
+    }
 
+    public void setHit(int hit) {
+        this.hit = hit;
+    }
+
+    public void setBlackJack(int blackJack) {
+        this.blackJack = blackJack;
+    }
+
+    public void setBust(int bust) {
+        this.bust = bust;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+    
     /**
      * The method to be overridden when you subclass the Player class with your specific type of Player and filled in
      * with logic to play your game.
